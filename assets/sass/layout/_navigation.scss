@@ -1,10 +1,11 @@
 /* Navigation
 =====================*/
 
-.menu {
-  width: 960px;
-  padding: 10px;
-  border-bottom: 1px solid gray
+.navbar {
+/*  width: 960px;*/
+  padding: 10px 0;
+  border-bottom: 1px solid gray;
+  width: 100%;
 }
 
 .logo {
@@ -14,19 +15,43 @@
   display: inline-block;
 }
 
-.nav {
-  display: inline-block;
-  width: 840px;
+.navbar__menu {
   text-align: right;
+  float: right;
+  margin: 20px 0;
 }
 
+.navbar__menu ul {
+}
 
+.navbar__menu ul li {
+  display: inline-block;
+  margin-left: 10px;
+}
 
-.nav ul li a {
+.navbar__menu ul li a {
   text-decoration: none;
   text-transform: uppercase;
 }
 
 .input-menu {
   border-radius: 30px;
+}
+
+
+.menu__item-hide{
+  display: none;
+
+  @include respond-to('medium') {
+    display: inline-block;
+  }
+
+  @include respond-to('large') {
+    display: inline-block;
+  }
+
+  @include respond-to('extralarge') {
+    display: inline-block;
+  }
+
 }

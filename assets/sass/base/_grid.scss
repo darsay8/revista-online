@@ -6,7 +6,6 @@
 .container {
   padding: 0 15px;
   margin: 0 auto;
-  width: 100%;
 
 
   @include respond-to("small") {
@@ -26,7 +25,6 @@
   }
 
 }
-
 
 /*Row*/
 

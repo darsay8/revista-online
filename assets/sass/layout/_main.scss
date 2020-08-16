@@ -1,20 +1,46 @@
 /* Main
 =====================*/
-.contenido {
-  width: 960px;
+.main-content {
+/*  width: 960px;*/
   margin: 0 auto;
+  clear: both;
 }
 
-.listad-noticias {
-  width: 700px;
+.news__section {
+  width: 100%;
   float: left;
+
+ /* @include respond-to('large') {
+    width: 700px;
+  }
+  @include respond-to('extralarge') {
+    width: 700px;
+  }*/
 }
 
-.noticia {
-  width: 210px;
-  display: inline-block;
+.news__item {
   margin: 5px;
   cursor: pointer;
+
+  @include respond-to('extrasmall') {
+    width: 100%;
+    display: block;
+  }
+
+  @include respond-to('medium') {
+    width: 48%;
+    display: inline-block;
+  }
+
+  @include respond-to('large') {
+    width: 210px;
+    display: inline-block;
+  }
+
+  @include respond-to('extralarge') {
+    width: 210px;
+    display: inline-block;
+  }
 }
 
 .cuerpo img {
