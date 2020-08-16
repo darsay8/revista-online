@@ -3,35 +3,35 @@
 .aside__section {
 /*  width: 220px;*/
   float: right;
+  display: none;
+  @include respond-to('medium') {
+    display: block;
+  }
+  @include respond-to('large') {
+    display: block;
+  }
+  @include respond-to('extralarge') {
+    display: block;
+  }
 }
 
-.cabecera-listado {
+.aside__head {
   width: 220px;
   border-bottom: 1px solid gray;
+  padding-bottom: 10px;
 }
 
-.tags {
-  border-bottom: 1px solid gray;
-}
-
-.tags ul {
-  padding: 0;
-  list-style: none;
-}
-
-.tags ul li {
-  padding: 2px 4px;
-  background-color: steelblue;
-  margin-right: 1px;
-  color: white;
-}
-
-.noticias-destacadas {
+.aside__latest {
   margin-bottom: 50px;
+
+  img {
+    width: 220px;
+    height: 200px;
+  }
 }
 
-.noticias-destacadas img {
-  width: 220px;
-  height: 200px;
+.aside__tags{
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
 }
 

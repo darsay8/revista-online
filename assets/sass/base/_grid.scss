@@ -6,9 +6,7 @@
 .container {
   padding: 0 15px;
   margin: 0 auto;
-  border: 1px solid green;
-
-
+  
   @include respond-to("small") {
     width: 560px;
   }

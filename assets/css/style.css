@@ -164,7 +164,6 @@ template {
 .container {
   padding: 0 15px;
   margin: 0 auto;
-  border: 1px solid green;
 }
 @media (min-width: 576px) {
   .container {
@@ -533,7 +532,7 @@ h1, h2, h3, h4, h5, p {
 =====================*/
 .main-content {
   /*  width: 960px;*/
-  margin: 0 auto;
+  margin: 10px auto 0;
   clear: both;
 }
 
@@ -610,36 +609,41 @@ h1, h2, h3, h4, h5, p {
 .aside__section {
   /*  width: 220px;*/
   float: right;
+  display: none;
+}
+@media (min-width: 768px) {
+  .aside__section {
+    display: block;
+  }
+}
+@media (min-width: 992px) {
+  .aside__section {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  .aside__section {
+    display: block;
+  }
 }
 
-.cabecera-listado {
+.aside__head {
   width: 220px;
   border-bottom: 1px solid gray;
+  padding-bottom: 10px;
 }
 
-.tags {
-  border-bottom: 1px solid gray;
-}
-
-.tags ul {
-  padding: 0;
-  list-style: none;
-}
-
-.tags ul li {
-  padding: 2px 4px;
-  background-color: steelblue;
-  margin-right: 1px;
-  color: white;
-}
-
-.noticias-destacadas {
+.aside__latest {
   margin-bottom: 50px;
 }
-
-.noticias-destacadas img {
+.aside__latest img {
   width: 220px;
   height: 200px;
+}
+
+.aside__tags {
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
 }
 
 /* Newsletter
@@ -676,6 +680,21 @@ h1, h2, h3, h4, h5, p {
   margin: 0 auto;
   text-align: center;
   padding: 10px 0;
+}
+
+/* Tag
+=====================*/
+.tags {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.tags .tag__item {
+  padding: 2px 4px;
+  background-color: steelblue;
+  margin-right: 1px;
+  color: white;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=style.css.map */
