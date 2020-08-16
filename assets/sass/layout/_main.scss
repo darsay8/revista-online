@@ -1,7 +1,7 @@
 /* Main
 =====================*/
 .main-content {
-/*  width: 960px;*/
+  /*  width: 960px;*/
   margin: 0 auto;
   clear: both;
 }
@@ -9,17 +9,10 @@
 .news__section {
   width: 100%;
   float: left;
-
- /* @include respond-to('large') {
-    width: 700px;
-  }
-  @include respond-to('extralarge') {
-    width: 700px;
-  }*/
 }
 
 .news__item {
-  margin: 5px;
+/*  margin: 5px;*/
   cursor: pointer;
 
   @include respond-to('extrasmall') {
@@ -28,7 +21,7 @@
   }
 
   @include respond-to('medium') {
-    width: 48%;
+    width: 210px;
     display: inline-block;
   }
 
@@ -43,11 +36,41 @@
   }
 }
 
-.cuerpo img {
-  width: 210px;
-  height: 300px;
-}
 
-.cuerpo p {
-  padding: 5px 10px;
+.news__body {
+
+  img {
+
+    height: 300px;
+    object-fit: cover;
+
+    @include respond-to('extrasmall') {
+      width: 100%;
+
+    }
+
+    @include respond-to('small') {
+      width: 100%;
+    }
+
+    @include respond-to('medium') {
+      width: 210px;
+    }
+
+    @include respond-to('large') {
+      width: 210px;
+    }
+
+  }
+
+  p {
+    width: 210px;
+    padding: 5px 10px;
+
+    @include respond-to('extrasmall') {
+      width: 100%;
+
+    }
+  }
+
 }

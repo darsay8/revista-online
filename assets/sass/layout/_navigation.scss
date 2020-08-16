@@ -18,26 +18,35 @@
 .navbar__menu {
   text-align: right;
   float: right;
-  margin: 20px 0;
-}
+  margin: 19px 0;
 
-.navbar__menu ul {
-}
+  li:nth-child(3){
+    @include respond-to('extrasmall') {
+      width: 40%;
+    }
+  }
 
-.navbar__menu ul li {
-  display: inline-block;
-  margin-left: 10px;
-}
+  li>input {
+    @include respond-to('extrasmall') {
+      width: 100%;
+    }
+  }
 
-.navbar__menu ul li a {
-  text-decoration: none;
-  text-transform: uppercase;
+  ul li {
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+  ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
 }
 
 .input-menu {
   border-radius: 30px;
 }
-
 
 .menu__item-hide{
   display: none;
